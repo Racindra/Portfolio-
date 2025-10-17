@@ -1,0 +1,24 @@
+{% extends "core/base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="text-center"><img src="{% static 'core/images/fbprofile.jpg'%}" alt="profile picture" class= 'img-thumbnail mt-5' width = 250px height='150px' ></div>
+        <div class= 'mt-3'>
+            
+            <div class="text-white">
+                <h1 class="font-white-bold st-font">Hello</h1>
+                <div class="px-4" style="line-height:2rem;">
+                    <p style="text-indent:100px;"> I am <b class="text-warning st-font">Rabindra Chapagain</b> having 5 years of full-stack web development experience for global businesses,I offer the technical expertise
+                        you are seeking for your web developer position</p>
+                        <p>Since earning my bachelor degree in the intern and web development from <b class="text-warning">PN Campus</b>, I have served as a web developer at <b class="text-warning">Rabindra software company</b> one of the 
+                        biggest web devlopment company, I have led webdevlopment projects for clients in diverse industries </p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nisi corrupti eius et labore consectetur praesentium neque quibusdam sint dolore, ullam incidunt aperiam earum repellat totam exercitationem delectus odio sed.</p>
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="{% url 'contacts'%}" class="btn btn-outline-warning my-3 mr-5"> Hire Me</a>
+                <a href="{% url 'contacts'%}" class="btn btn-outline-info my-3 mx-3 ">Contact </a>
+            </div>
+        </div>
+        {% block title %}Home{% endblock title %}
+{% endblock content %}
