@@ -24,10 +24,17 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-&wbnk*p^g)5rcmeua5o+)^yib-9@az*6atf%^l9&@gv1q40d)w'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ["rabindrachapain.com.np", "www.rabindrachapain.com.np"]
+ALLOWED_HOSTS = [
+    "rabindrachapain.com.np",
+    "www.rabindrachapain.com.np",
+]
 
+CSRF_TRUSTED_ORIGINS = [
+    "https://rabindrachapain.com.np",
+    "https://www.rabindrachapain.com.np",
+]
 
 # Application definition
 
@@ -123,4 +130,3 @@ STATIC_ROOT = os.path.join(BASE_DIR,'static/')
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-CSRF_TRUSTED_ORIGINS = ['https://rabindrachapain.com.np']
